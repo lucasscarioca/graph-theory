@@ -21,6 +21,7 @@ class Graph {
     this.adjList.get(w).push(v) // Adiciona mesma aresta em w, já que é um grafo sem direção
   }
 
+  // Exibe Lista de Adjacência
   printGraph() {
     let getKeys = this.adjList.keys()
 
@@ -35,6 +36,7 @@ class Graph {
     }
   }
 
+  // Exibe resultado da BFS
   printColorDistanceParent() {
     let getKeys = this.color.keys()
     for (let i of getKeys) {
@@ -45,6 +47,7 @@ class Graph {
     }
   }
 
+  // Busca em Largura
   bfs(s) {
 
     this.color.set(s, "gray")
@@ -72,6 +75,7 @@ class Graph {
     }
   }
 
+  // Encontra o melhor caminho entre a origem s e o destino f
   printBestPath(s, f) {
     if (f == s) {
       console.log(s)
