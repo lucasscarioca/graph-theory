@@ -13,7 +13,7 @@ material utilizado:
 
 ### Pseudocódigos utilizados
 - BFS
-<img src="/pseudocodigoBfs.png" alt="pseudocodigoBfs" style="height: 500px; width:200px;"/>
+<img src="/pseudocodigoBfs.png" alt="pseudocodigoBfs" style="height: 500px; width:300px;"/>
 
 - BestPath
-<img src="/pseudocodigoPath.png" alt="pseudocodigoPath" style="height: 400px; width:200px;"/>
+<img src="/pseudocodigoPath.png" alt="pseudocodigoPath" style="height: 400px; width:300px;"/>
