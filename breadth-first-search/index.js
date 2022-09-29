@@ -1,4 +1,4 @@
-const Graph = require('./graph')
+const Graph = require('../entities/graph')
 
 let g = new Graph(32)
 // representação dos vértices em printPacman.png
@@ -9,6 +9,7 @@ let vertices = [
   'D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D11', 'D12', 'D13',
 ]
 
+// Adiciona os Vértices
 for (let i = 0; i < vertices.length; i++) {
   g.addVertex(vertices[i])
 }
@@ -47,18 +48,14 @@ g.addEdge('D1', 'C1');
 g.addEdge('C1', 'B1');
 g.addEdge('B1', 'A1');
 
-// print Array de vértices
-console.log(vertices)
-console.log("\n\n\n")
-// print lista de adjacência
 console.log("Lista de Adjacência")
 g.printGraph();
 console.log("\n\n\n")
-// Realiza Busca em Largura
+
 g.bfs('A13')
 console.log("Resultado Busca em Largura")
 g.printColorDistanceParent()
 console.log("\n\n\n")
-// Busca melhor caminho
+
 console.log("Melhor caminho")
 g.printBestPath('A13', 'D2')
