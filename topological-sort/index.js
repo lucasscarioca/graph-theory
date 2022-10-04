@@ -1,8 +1,8 @@
 const Graph = require('../entities/graph')
 
-const g = new Graph(7)
+const g = new Graph(8)
 
-let verts = ['libA', 'libB', 'libC', 'libD', 'libE', 'libF', 'libG']
+let verts = ['lib7', 'lib5', 'lib6', 'lib4', 'lib2', 'lib3', 'lib1', 'lib0']
 
 // Adiciona os Vértices
 for (let i = 0; i < verts.length; i++) {
@@ -10,15 +10,15 @@ for (let i = 0; i < verts.length; i++) {
 }
 
 // Adiciona as Arestas. Define terceiro parâmetro como true pois são arestas direcionadas
-g.addEdge('libA', 'libB', true)
-g.addEdge('libA', 'libC', true)
-g.addEdge('libB', 'libC', true)
-g.addEdge('libB', 'libF', true)
-g.addEdge('libC', 'libD', true)
-g.addEdge('libF', 'libD', true)
-g.addEdge('libF', 'libE', true)
-g.addEdge('libG', 'libB', true)
-g.addEdge('libG', 'libF', true)
+g.addEdge('lib7', 'lib5', true)
+g.addEdge('lib7', 'lib6', true)
+g.addEdge('lib5', 'lib4', true)
+g.addEdge('lib5', 'lib2', true)
+g.addEdge('lib6', 'lib4', true)
+g.addEdge('lib6', 'lib3', true)
+g.addEdge('lib2', 'lib1', true)
+g.addEdge('lib3', 'lib1', true)
+g.addEdge('lib1', 'lib0', true)
 
 console.log("Lista de Adjacência")
 g.printGraph()
